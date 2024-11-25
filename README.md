@@ -1,73 +1,77 @@
-# 🚗 **AutoVision** 🔍  
-**_Revolutionize Vehicle Classification with Machine Learning_**
+# **CelebMatch AI**
+
+**CelebMatch AI** is a machine learning model that predicts the closest matching celebrity for a given uploaded image. This project combines image classification and similarity detection, leveraging a custom Convolutional Neural Network (CNN) and pretrained models for accurate predictions and feature-based similarity analysis.
 
 ---
 
-## 🌟 **Overview**  
-**AutoVision** is a cutting-edge vehicle classification system powered by **machine learning** and **image processing**. Leveraging **Wavelet Transform** for feature extraction and a **Random Forest Classifier**, AutoVision identifies **seven types of vehicles** with impressive accuracy:  
-- 🚗 **Cars**  
-- 🚉 **Trains**  
-- 🚢 **Ships**  
-- 🏍️ **Motorcycles**  
-- 🚖 **Auto Rickshaws**  
-- 🚴‍♂️ **Bicycles**  
-- ✈️ **Planes**  
+## **✨ Project Highlights**
 
-Whether you're building a smart traffic system or exploring artificial intelligence, **AutoVision** is your go-to solution for vehicle recognition.  
+### **Celebrity Image Matching**
+- Identifies the closest matching celebrity from a dataset of labeled images.
+- Outputs prediction confidence and similarity scores.
 
----
+### **Advanced Model Architecture**
+- Built a custom CNN architecture for classification.
+- Optimized feature extraction using **VGG16** pretrained on ImageNet.
 
-## 🔑 **Key Features**
-- **High Accuracy**: Advanced feature extraction using **Wavelet Transform** ensures precise predictions.  
-- **Robust Classifier**: Powered by **Random Forest**, it delivers reliable and consistent results.  
-- **Real-time Predictions**: Instantly classify vehicles by uploading images.  
-- **Scalable & Flexible**: Works seamlessly with a wide variety of datasets.  
-- **Google Colab Support**: Run the project easily without local setup hassles.
+### **Similarity Scoring**
+- Computes similarity between uploaded images and the dataset using **cosine similarity**.
+- Finds the best match from a collection of celebrity images.
 
----
-
-## ⚙️ **How It Works**
-
-1. **Image Preprocessing**: Convert images to grayscale and apply **Discrete Wavelet Transform (DWT)** for feature extraction.  
-2. **Feature Engineering**: Combine original image features with wavelet coefficients for robust classification.  
-3. **Model Training**: Train a **Random Forest Classifier** using the extracted features.  
-4. **Prediction**: Upload new images, and the model predicts the vehicle clasPlanes/# 🚗 **AutoVision Dataset** 🔍  
-
-AutoVision uses a **Vehicle Classification Dataset** available on Kaggle. The dataset includes images of seven vehicle types, ideal for training and testing the model.
+### **Streamlined Workflow**
+- Developed with **TensorFlow/Keras** for deep learning.
+- **OpenCV** for image preprocessing and data augmentation.
+- **Scikit-learn** for similarity analysis.
+- **Google Colab** for training and testing.
+- **Google Drive** for efficient data and checkpoint storage.
 
 ---
 
-## **Dataset Details**
-- **Classes:**  
-  - Cars  
-  - Trains  
-  - Ships  
-  - Motorcycles  
-  - Auto Rickshaws  
-  - Bicycles  
-  - Planes  
+## **🚀 Technologies Used**
 
-- **Size:** ~5,600 images  
-- **Source:** [Kaggle - Vehicle Classification Dataset](https://www.kaggle.com/datasets/mohamedmaher5/vehicle-classification)  
+- **TensorFlow/Keras**: For building, training, and fine-tuning the CNN model.
+- **VGG16**: Leveraging pretrained feature extraction.
+- **NumPy**: Efficient numerical computations.
+- **Matplotlib**: Visualizing predictions and results.
+- **OpenCV**: Image preprocessing.
+- **Scikit-learn**: Cosine similarity for feature comparison.
+- **Google Colab & Drive**: Cloud-based training and storage.
 
 ---
 
-## **Download Instructions**
-1. Visit the dataset link: [Vehicle Classification Dataset](https://www.kaggle.com/datasets/mohamedmaher5/vehicle-classification).  
-2. Click on **Download Dataset** (requires a Kaggle account).  
-3. Upload the extracted dataset to your Google Drive at
+## **⚙️ Setup Instructions**
 
-## 📂 **Dataset Structure**
-Organize images into subdirectories based on vehicle classes:
+### **Prerequisites**
+- Python 3.x
+- TensorFlow 2.x
+- NumPy, OpenCV, Matplotlib
+- Google Colab (Optional)
 
-```bash
-/Vehicles
-  ├── Cars/
-  ├── Trains/
-  ├── Ships/
-  ├── Motorcycles/
-  ├── Auto Rickshaws/
-  ├── Bicycles/
-  └── Planes/he following location:  
+---
 
-on
+## **🔑 Key Features**
+
+### **1. Data Processing**
+- Automated pipeline for loading, augmenting, and normalizing celebrity datasets.
+
+### **2. Model Architecture**
+- Custom CNN for classification.
+- Optional fine-tuning with **VGG16** for improved feature extraction.
+
+### **3. Interactive Predictions**
+- Upload an image to predict the closest matching celebrity.
+- Visualize predictions and confidence scores.
+
+### **4. Similarity Analysis**
+- Extracts feature vectors from images.
+- Finds the most similar image using cosine similarity.
+
+---
+
+## **📊 Results and Visualization**
+
+- Classification and similarity results with confidence scores.
+- Visual comparisons of uploaded images and their closest matches.
+- Detailed performance metrics.
+
+---
